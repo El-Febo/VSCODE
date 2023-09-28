@@ -20,7 +20,7 @@ int main(){
         } while( choice != 'V' && choice != 'P' && choice != 'S' );
         
         
-        //blocco per assegnare valori al vettore
+        //blocco per assegnare i valori al vettore
         if(choice == 'V')
             CreateArray(array, lenght);
 
