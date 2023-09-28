@@ -26,7 +26,7 @@ int main(){
 
 
 
-        //blocco per stampare il vettore
+        //blocco per stampare il vettore 
         if(choice == 'P')
             PrintArray(array, lenght);
         
