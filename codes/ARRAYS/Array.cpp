@@ -2,6 +2,7 @@
 #include"ValueofArray.h"
 #include"PrintArray.h"
 #include"SwitchArrays.h"
+#include"Zeroattheend.h"
 using namespace std;
 
 int main(){
@@ -15,9 +16,9 @@ int main(){
     {
         char choice;
         do{
-            cout << "\nWhat do you want to do: Give new value 'V'  Print 'P'  Switch 'S' \n";
+            cout << "\nWhat do you want to do: Give new value 'V'  Print 'P'  Switch 'S'  Move 0s at the end \n";
             cin  >> choice;  
-        } while( choice != 'V' && choice != 'P' && choice != 'S' );
+        } while( choice != 'V' && choice != 'P' && choice != 'S' && choice != 'Z' );
         
         
         //blocco per assegnare i valori al vettore
@@ -37,6 +38,10 @@ int main(){
         if(choice == 'S')
             SwitchArray(array, lenght);
 
+        
+        //blocco per spostare gli zeri alla fine
+        if(choice == 'Z')
+            moveZero(array, lenght);
 
     } while (true);
 }
