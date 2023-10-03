@@ -11,7 +11,7 @@ void moveZero(int vettore[], int n){
         return;
 
 
-    //controllo zeri già ala fine
+    //controllo zeri già alla fine
     if(vettore[n - 1] == 0)
         moveZero(vettore, (n - 1));
 
