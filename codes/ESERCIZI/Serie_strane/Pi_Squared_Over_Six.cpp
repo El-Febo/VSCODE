@@ -2,7 +2,7 @@
 #include<cmath>
 using namespace std;
 
-
+//non funziona più
 
 double Pi(int N, double i = 1){   
 
@@ -17,5 +17,5 @@ double Pi(int N, double i = 1){
 int main(){
     int k;
     cin >> k;
-    cout << sqrt(6 * Pi(k)) << "\n";
+    cout << Pi(k) << "\n";
 }
