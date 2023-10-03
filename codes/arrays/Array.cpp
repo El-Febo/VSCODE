@@ -16,7 +16,7 @@ int main(){
     {
         char choice;
         do{
-            cout << "\nWhat do you want to do: Give new value 'V'  Print 'P'  Switch 'S'  Move 0s at the end \n";
+            cout << "\nWhat do you want to do: Give new value 'V'  Print 'P'  Switch 'S'  Move 0s at the end 'Z'\n";
             cin  >> choice;  
         } while( choice != 'V' && choice != 'P' && choice != 'S' && choice != 'Z' );
         
