@@ -1,10 +1,13 @@
 #include<iostream>
+#include"Primes.h"
 using namespace std;
 
 int main(){
-    int n; cin >> n;
+    int n; 
+    cin >> n;
 
-    for (int i = 2; i < (n/2); i++){
-        //usa una funzione che dica se il numero è primo o meno
+    for (int i = 1; i <= (n/2); i++){
+        if(findPrime(i) && findPrime(n - i))
+            cout << i  << " + " << (n - i) << " = " << n << endl;
     }
 }
