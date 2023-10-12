@@ -3,6 +3,7 @@ using namespace std;
 
 
 int Successione(int n){
+
     if(n == 0)
         return 0;
     if(n == 1)
@@ -14,6 +15,11 @@ int Successione(int n){
 int main(){
     int k;
     cin >> k;
+    if(k < 0){
+        cout << "N te se mio furbo \n";
+        cin >> k;
+    }
+        
     for(int i = 0; i < k; i++)
         cout << "| " << Successione(i) << " |";
     cout << "\n";  
